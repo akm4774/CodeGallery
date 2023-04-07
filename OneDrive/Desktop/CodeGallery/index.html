@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>CodeGallery</title>
+</head>
+
+<body>
+    <header>
+        <div class="hero">
+            <h1>CodeGallery</h1>
+            <p>Discover and showcase tech projects</p>
+            <a href="#profile-creation" class="btn">Get Started</a>
+        </div>
+    </header>
+
+    <section id="profile-creation" class="parallax">
+        <h2>Profile Creation</h2>
+        <form id="profile-form">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" name="skills" placeholder="E.g. JavaScript, Python">
+    
+            <label for="experience">Experience:</label>
+            <textarea id="experience" name="experience" rows="4" placeholder="Briefly describe your experience"></textarea>
+    
+            <label for="education">Education:</label>
+            <input type="text" id="education" name="education" placeholder="E.g. B.Sc. Computer Science">
+    
+            <label for="programming-languages">Programming Languages:</label>
+            <input type="text" id="programming-languages" name="programming-languages" placeholder="E.g. Java, Python, C++">
+    
+            <button type="submit">Create Profile</button>
+        </form>
+    </section>
+    <section id="project-upload" class="parallax">
+        <h2>Project Upload</h2>
+        <form id="project-form">
+            <label for="project-title">Project Title:</label>
+            <input type="text" id="project-title" name="project-title" required>
+    
+            <label for="project-description">Project Description:</label>
+            <textarea id="project-description" name="project-description" rows="4" placeholder="Briefly describe your project" required></textarea>
+    
+            <label for="project-tags">Tags:</label>
+            <input type="text" id="project-tags" name="project-tags" placeholder="E.g. JavaScript, Web Development">
+    
+            <label for="project-category">Category:</label>
+            <select id="project-category" name="project-category">
+                <option value="" disabled selected>Select a category</option>
+                <option value="web-development">Web Development</option>
+                <option value="mobile-development">Mobile Development</option>
+                <option value="data-science">Data Science</option>
+                <option value="machine-learning">Machine Learning</option>
+                <option value="embedded-systems">Embedded Systems</option>
+            </select>
+    
+            <label for="project-presentation">Project Presentation:</label>
+            <input type="file" id="project-presentation" name="project-presentation" accept=".pdf,.ppt,.pptx" required>
+    
+            <label for="project-source-code">Source Code:</label>
+            <input type="file" id="project-source-code" name="project-source-code" accept=".zip" required>
+    
+            <button type="submit">Upload Project</button>
+        </form>
+    </section>
+    
+
+    <section id="project-browsing" class="parallax">
+        <h2>Project Browsing</h2>
+        <input type="search" id="project-search" name="project-search" placeholder="Search projects...">
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Description of Project 1...</p>
+                <a href="#" class="project-details">View Details</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Description of Project 2...</p>
+                <a href="#" class="project-details">View Details</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>Description of Project 3...</p>
+                <a href="#" class="project-details">View Details</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="project-feedback" class="parallax">
+        <img src="https://source.unsplash.com/random/?community,programming" alt="Background Image" class="section-bg">
+        <h2>Project Feedback & Discussions</h2>
+        <form id="feedback-form">
+            <label for="feedback-message">Your Message:</label>
+            <textarea id="feedback-message" name="feedback-message" rows="4" placeholder="Share your feedback or start a discussion" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <section id="developer-highlights" class="parallax">
+        <h2>Developer Highlights</h2>
+        <div class="developer-card">
+            <h3>Developer Name</h3>
+            <p>Software Engineer at XYZ</p>
+            <p>Programming Languages: JavaScript, Python, C++</p>
+            <p>Education: Bachelor's in Computer Science, ABC University</p>
+        </div>
+        <!-- Add more developer cards if needed -->
+    </section>
+    
+
+</body>
+
+</html>
